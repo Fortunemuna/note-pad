@@ -1,5 +1,6 @@
 const notesContainer = document.querySelector(".notes-container");
 const createBtn = document.querySelector(".btn");
+const saveBtn = document.querySelector(".save-btn"); // Selecting the save button
 let notes = document.querySelectorAll(".input-box");
 
 function showNotes(){
@@ -41,3 +42,7 @@ document.addEventListener("keydown", event =>{
         event.preventDefault();
     }
 })
+
+saveBtn.addEventListener("click", () => {
+    updateStorage(); // Save button click event handler
+});
