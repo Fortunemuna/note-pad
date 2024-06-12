@@ -58,3 +58,16 @@
     right: 15px;
     cursor: pointer;
 }
+
+small{
+    position: absolute; 
+    bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 11px;
+    background-color: #0b0707;
+}
+@media screen and (max-width: 600px) {
+   .input-box{
+     width: 80vw;
+   }
+}
